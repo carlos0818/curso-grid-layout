@@ -1,0 +1,42 @@
+.currentTime {
+    border: 1px solid red;
+    block-size: .2px;
+    background: var(--red10);
+    inline-size: 5rem;
+    max-inline-size: 5rem;
+    position: absolute;
+    inset-inline-start: 70px;
+    inset-block-start: 530px;
+    z-index: 2;
+}
+
+.currentTime::before {
+    content: '';
+    display: block;
+    inline-size: 1rem;
+    block-size: 1rem;
+    background: var(--red10);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.currentTime-day {
+    border: 1px solid red;
+    block-size: .2px;
+    background: var(--red10);
+    inline-size: calc(100% - 6rem);
+    position: absolute;
+    inset-inline-start: 70px;
+    inset-block-start: 530px;
+    z-index: 2;
+}
+
+.currentTime-day::before {
+    content: '';
+    display: block;
+    inline-size: 1rem;
+    block-size: 1rem;
+    background: var(--red10);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}

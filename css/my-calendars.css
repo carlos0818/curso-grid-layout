@@ -1,0 +1,10 @@
+.myCalendars {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+}
+
+.searchPeople {
+    display: block;
+    inline-size: 100%;
+}
